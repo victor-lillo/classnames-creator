@@ -1,4 +1,4 @@
-# classnames
+# classnames-generator
 
 > Concats CSS classnames, based on conditions
 
