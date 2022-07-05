@@ -1,9 +1,11 @@
-export default function classnames(...params) {
-    let str = ''
+export default function classnames(...params: unknown[]): string {
+
+    const dataArr = new Set();
+
     for (const param of params) {
         // string
         if (typeof param === 'string' && param.length > 0) {
-            str += param + ' '
+            dataArr.add(param)
         }
         // object & array
         else if (typeof param === 'object') {
@@ -11,18 +13,18 @@ export default function classnames(...params) {
             if (Array.isArray(param)) {
                 for (const e of param) {
                     if (e)
-                        str += e + ' '
+                        dataArr.add(e)
                 }
             }
             // object
             else {
                 for (const key in param) {
                     if (param[key]) {
-                        str += key + ' '
+                        dataArr.add(key)
                     }
                 }
             }
         }
     }
-    return str
+    return [...dataArr].join(' ')
 }

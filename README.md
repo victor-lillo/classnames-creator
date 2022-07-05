@@ -16,6 +16,8 @@ Numbers will be ignored.
 
 Objects arguments will be only included if their keys are [truthy values](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
 
+Automatically removes duplicated classes.
+
 
 ```js
 import classnames from 'classnames-creator';

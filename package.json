@@ -6,6 +6,8 @@
   "license": "MIT",
   "description": "Concats CSS classnames, based on conditions",
   "type": "module",
+  "homepage": "https://github.com/fentosv/classnames-generator",
+  "test": "echo \"Error: no test specified\" && exit 1",
   "dependencies": {
     "typescript": "^4.7.4"
   },
