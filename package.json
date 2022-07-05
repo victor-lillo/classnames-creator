@@ -1,0 +1,32 @@
+{
+  "name": "classnames-creator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "description": "Concats CSS classnames, based on conditions",
+  "type": "module",
+  "dependencies": {
+    "typescript": "^4.7.4"
+  },
+  "author": {
+    "name": "Fentos",
+    "email": "fentos.dev@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fentosv/classnames-creator.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "conditionally",
+    "class-names",
+    "classnames",
+    "concat",
+    "concatenate",
+    "fentos",
+    "fentosv"
+  ]
+}
