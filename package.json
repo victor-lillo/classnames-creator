@@ -1,14 +1,18 @@
 {
-  "name": "classnames-creator",
+  "name": "@fentosv/classnames-creator",
   "version": "1.0.0",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist-node/index.js",
+  "browser": "dist-browser/index.js",
   "license": "MIT",
   "description": "Concats CSS classnames, based on conditions",
   "type": "module",
-  "homepage": "https://github.com/fentosv/classnames-generator",
-  "test": "echo \"Error: no test specified\" && exit 1",
+  "scripts": {
+    "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6",
+    "build-node": "tsc src/index.ts --outDir dist-node --module commonjs",
+    "build": "npm run build-browser & npm run build-node"
+  },
   "dependencies": {
+    "@types/node": "^18.0.1",
     "typescript": "^4.7.4"
   },
   "author": {
@@ -19,10 +23,11 @@
     "type": "git",
     "url": "git://github.com/fentosv/classnames-creator.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
+  "homepage": "https://github.com/fentosv/classnames-creator",
   "keywords": [
+    "nextjs",
+    "react",
+    "reactjs",
     "conditionally",
     "class-names",
     "classnames",

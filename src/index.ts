@@ -1,6 +1,6 @@
 export default function classnames(...params: unknown[]): string {
 
-    const dataArr = new Set();
+    const dataArr = new Set<string>();
 
     for (const param of params) {
         // string
@@ -26,5 +26,5 @@ export default function classnames(...params: unknown[]): string {
             }
         }
     }
-    return [...dataArr].join(' ')
+    return Array.from(dataArr).join(' ')
 }
