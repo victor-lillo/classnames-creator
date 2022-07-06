@@ -1,6 +1,6 @@
 # classnames-generator
 
-> Concats CSS classnames, based on conditions
+> Concats CSS classnames, based on conditions.
 
 ## Install
 
@@ -12,11 +12,11 @@ $ npm install classnames-creator
 
 The `classnames` function accepts any number of arguments `string` or `object` (also `arrays`).
 
+Array elements and objects arguments will be only included if their keys are [truthy values](https://developer.mozilla.org/en-US/docs/Glossary/Truthy).
+
 Numbers will be ignored.
 
-Objects arguments will be only included if their keys are [truthy values](https://developer.mozilla.org/en-US/docs/Glossary/Truthy).
-
-Automatically removes duplicated classes.
+Automatically **removes duplicated** classes.
 
 
 ```js
