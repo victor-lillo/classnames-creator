@@ -1,6 +1,6 @@
 {
   "name": "classnames-creator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist-node/index.js",
   "browser": "dist-browser/index.js",
   "license": "MIT",
@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6",
-    "build-node": "tsc src/index.ts --outDir dist-node --module commonjs",
+    "build-node": "tsc src/index.ts --outDir dist-node --module nodenext",
     "build": "npm run build-browser & npm run build-node"
   },
   "dependencies": {
