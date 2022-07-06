@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "dist-node/index.js",
   "browser": "dist-browser/index.js",
+  "types": "types/index.d.ts",
   "license": "MIT",
   "description": "Concats CSS classnames, based on conditions",
   "type": "module",
   "scripts": {
     "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6",
     "build-node": "tsc src/index.ts --outDir dist-node --module nodenext",
-    "build": "npm run build-browser & npm run build-node"
+    "build-type": "tsc src/index.ts -declaration --allowJs --emitDeclarationOnly --outDir types",
+    "build": "npm run build-browser & npm run build-node & npm run build-types"
   },
   "dependencies": {
     "@types/node": "^18.0.1",
