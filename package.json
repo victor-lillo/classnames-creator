@@ -1,6 +1,6 @@
 {
   "name": "classnames-creator",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "dist-node/index.js",
   "browser": "dist-browser/index.js",
   "license": "MIT",
