@@ -1,6 +1,6 @@
 {
   "name": "classnames-creator",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "dist-node/index.js",
   "browser": "dist-browser/index.js",
   "types": "types/index.d.ts",
@@ -11,7 +11,7 @@
     "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6",
     "build-node": "tsc src/index.ts --outDir dist-node --module nodenext",
     "build-type": "tsc src/index.ts -declaration --allowJs --emitDeclarationOnly --outDir types",
-    "build": "npm run build-browser & npm run build-node & npm run build-types"
+    "build": "npm run build-browser & npm run build-node & npm run build-type"
   },
   "dependencies": {
     "@types/node": "^18.0.1",
