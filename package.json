@@ -1,16 +1,16 @@
 {
   "name": "classnames-creator",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "main": "dist-node/index.js",
   "browser": "dist-browser/index.js",
-  "types": "types/index.d.ts",
+  "types": "src/index.d.ts",
   "license": "MIT",
   "description": "Concats CSS classnames, based on conditions",
   "type": "module",
   "scripts": {
     "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6",
     "build-node": "tsc src/index.ts --outDir dist-node --module nodenext",
-    "build-type": "tsc src/index.ts -declaration --allowJs --emitDeclarationOnly --outDir types",
+    "build-type": "tsc src/index.ts -declaration --allowJs --emitDeclarationOnly",
     "build": "npm run build-browser & npm run build-node & npm run build-type"
   },
   "dependencies": {
