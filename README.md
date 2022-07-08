@@ -49,8 +49,8 @@ export default function Button({ text, invertedColors, shape, ...props }: Props)
     styles.button
     {
         [styles.invertedColors]: invertedColors
-        [styles.shape]: shape === 'rounded'
-        [styles.shape]: shape === 'bordered'
+        [styles.shape_rounded]: shape === 'rounded'
+        [styles.shape_bordered]: shape === 'bordered'
     }
   )
 
