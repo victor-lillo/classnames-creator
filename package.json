@@ -18,14 +18,14 @@
     "typescript": "^4.7.4"
   },
   "author": {
-    "name": "Fentos",
+    "name": "Víctor Lillo",
     "email": "fentos.dev@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/fentosv/classnames-creator.git"
+    "url": "git://github.com/victor-lillo/classnames-creator.git"
   },
-  "homepage": "https://github.com/fentosv/classnames-creator",
+  "homepage": "https://github.com/victor-lillo/classnames-creator",
   "keywords": [
     "nextjs",
     "react",
@@ -34,8 +34,6 @@
     "class-names",
     "classnames",
     "concat",
-    "concatenate",
-    "fentos",
-    "fentosv"
+    "concatenate"
   ]
 }
